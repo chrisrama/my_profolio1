@@ -1,6 +1,315 @@
-h1 {
-  color: #800;
+.body{
+    
+   -webkit-font-smotthing: antialiased;
 }
-html{
-  background-color: rgb(231, 217, 15);
+.elements {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #89a0ce;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation:  rainbow 5s infinite;
+}
+
+.rows {
+  cursor: pointer;
+}
+.span {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.burgerDiv {
+  display: none;
+}
+
+@media (max-width: 450px) {
+   .elements {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+    width: 35%;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  /*you can use alsofor the picture list so when the screen change it stays in one position*/
+}
+
+
+
+
+
+
+
+
+
+ /*  
+   animation:  rainbow 5s infinite;
+   scroll-behavior: smooth;
+   scroll-padding-left: 50px;
+   scroll-padding-inline: 50;
+*/
+   
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.block :hover{
+    transform: scale(1.02);
+}
+.block {
+    transition: all 0.4s ease-in-out;
+    
+}
+.container {
+    border-style: dashed;
+    
+}
+
+
+.home {
+    font-size: xx-large;
+    top: 0px;
+    right: 0px;
+}
+.quote{
+    border-width: 1rem;
+    border-left: var(--boder-width) solid purple;
+    box-shadow: inset 0 calc(var(--boder-width) * -1) lightblue;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    border-style: dashed;
+}
+h1 {
+    text-align: center;
+    background-size: 204px;
+    background-color: crimson;
+   
+}
+html {
+  background-color: rgb(43, 124, 156);
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;/*/
+    /*background-size: cover;*/
+}
+
+.list{
+   
+    display: flex;
+    background: rgb(255, 255, 255, 0.85);
+    text-decoration: none;
+   shape-image-threshold: initial;
+   transition: all;
+   transition-duration: 10s;
+   animation: both;
+   animation-duration: initial;
+   padding-top: 5%;
+   padding-left: 5%;
+   padding-bottom: 5%;
+   padding-right: 5%;
+
+}
+p {
+    text-align: center;
+}
+
+
+
+ol .one{
+    
+    transition: all 0.4s ease-in-out;
+}
+ol .two{
+    
+    transition: all 0.4s ease-in-out;
+}
+ol .tree{
+    
+    transition: all 0.4s ease-in-out;
+}
+ol .four{
+   
+    transition: all 0.4s ease-in-out;
+}
+ol .five{
+  
+    transition: all 0.4s ease-in-out;
+}
+
+ol .one :hover {
+    transform: scale(1.32);
+    animation: rotate 6s infinite;
+}
+ol .two :hover{
+    transform: scale(1.32);
+    animation: rotate 6s infinite;
+}
+ol .tree :hover{
+    transform: scale(1.32);
+    animation: rotate 6s infinite;
+}
+ol .four :hover{
+    transform: scale(1.32);
+    animation: rotate 6s infinite;
+}
+ol .five :hover{
+    transform: scale(1.32);
+    animation: rotate 6s infinite;
+}
+@keyframes rainbow {
+    14% {
+      color: red;
+    }
+    28% {
+      color: orange;
+    }
+    42% {
+      color: yellow;
+    }
+    56% {
+      color: green;
+    }
+    70% {
+      color: cyan;
+    }
+    84% {
+      color: blue;
+    }
+    100% {
+      color: purple;
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+
+  @-webkit-keyframes snowflakes-fall{
+      0%{
+          top:-10%
+        }
+        100%{
+            top:100%
+        }
+    }
+    @-webkit-keyframes snowflakes-shake{
+        0%{
+            -webkit-transform:translateX(0px);
+            transform:translateX(0px)
+        }
+        50%{
+            -webkit-transform:translateX(80px);
+            transform:translateX(80px)
+        }
+        100%{
+            -webkit-transform:translateX(0px);
+            transform:translateX(0px)
+        }
+    }@keyframes snowflakes-fall{
+        0%{
+            top:-10%}100%{top:100%
+        }
+    }@keyframes snowflakes-shake{
+        0%{transform:translateX(0px)
+        }
+        50%{transform:translateX(80px)
+        }
+        100%{transform:translateX(0px)
+        }
+    }
+    .snowflake{
+        position:fixed;
+        top:-10%;
+        z-index:9999;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+        cursor:default;
+        -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+        -webkit-animation-duration:10s,3s;
+        -webkit-animation-timing-function:linear,ease-in-out;
+        -webkit-animation-iteration-count:infinite,infinite;
+        -webkit-animation-play-state:running,running;
+        animation-name:snowflakes-fall,snowflakes-shake;
+        animation-duration:10s,3s;
+        animation-timing-function:linear,ease-in-out;
+        animation-iteration-count:infinite,infinite;
+        animation-play-state:running,running
+    }
+    .snowflake:nth-of-type(0){
+        left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+    }
+    .snowflake:nth-of-type(1){
+        left:10%;
+        -webkit-animation-delay:1s,1s;
+        animation-delay:1s,1s
+    }
+    .snowflake:nth-of-type(2){
+        left:20%;
+        -webkit-animation-delay:6s,.5s;
+        animation-delay:6s,.5s
+    }
+    .snowflake:nth-of-type(3){
+        left:30%;
+        -webkit-animation-delay:4s,2s;
+        animation-delay:4s,2s
+    }
+    .snowflake:nth-of-type(4){
+        left:40%;
+        -webkit-animation-delay:2s,2s;
+        animation-delay:2s,2s
+    }
+    .snowflake:nth-of-type(5){
+        left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;		
 }
