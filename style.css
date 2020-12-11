@@ -1,53 +1,13 @@
-.body{
-    
-   -webkit-font-smotthing: antialiased;
-}
-.elements {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: whitesmoke;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: #89a0ce;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation:  rainbow 5s infinite;
-}
 
-.rows {
-  cursor: pointer;
-}
-.span {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 5px;
-  border-radius: 2px;
-  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.burgerDiv {
-  display: none;
-}
-
-@media (max-width: 450px) {
-   .elements {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    margin: 0;
-    padding: 20px;
-    width: 35%;
-    height: 100%;
-    transform: translateX(-100%);
-  }
-  /*you can use alsofor the picture list so when the screen change it stays in one position*/
-}
+/** {
+  margin: 0;
+  padding: 0;
+}*/
 
 
 
+
+/*you can use alsofor the picture list so when the screen change it stays in one position*/
 
 
 
@@ -62,12 +22,118 @@
 */
    
 
-* {
-  margin: 0;
-  padding: 0;
+
+
+ /** {
+   margin: 0;
+   padding: 0;
+ }*/
+ 
+ 
+ 
+ /*you can use alsofor the picture list so when the screen change it stays in one position*/
+ 
+ 
+ 
+.html{
+    -webkit-font-smotthing: antialiased;
+    margin: auto;
 }
-.block :hover{
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ 
+ body{
+     background-color:rgba(255, 217, 0, 0.616);
+ }
+ .elements {
+   display: flex;
+   justify-content: space-evenly;
+     list-style: none;
+   padding-top: 10px;
+     padding-bottom: 10px;
+     color: whitesmoke;
+     font-weight: 500;
+   font-size: 20px;
+     background-color: #89a0ce;
+   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+   
+  
+ }
+ 
+ .rows {
+     cursor: pointer;
+ }
+ 
+ .span {
+   width: 30px;
+   height: 4px;
+   background-color: black;
+   margin-bottom: 5px;
+     border-radius: 2px;
+   transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .burgerDiv {
+   display: none;
+ }
+ 
+ @media (max-width: 450px) {
+     .elements {
+     flex-direction: column;
+         align-items: center;
+     position: absolute;
+     margin: 0;
+         padding: 20px;
+         width: 35%;
+     height: 100%;
+     transform: translateX(-100%);
+   }
+ 
+   .burgerDiv {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: 20px;
+     padding-top: 20px;
+   }
+ }
+ 
+ .sidebar {
+   transform: translateX(4px);
+ }
+ 
+ .line-0 {
+   transform: rotate(45deg) translate(4.5px, 12px);
+ }
+ 
+ .line-1 {
+   transform: scale(0);
+ }
+ 
+ .line-2 {
+   transform: rotate(-45deg) translateY(-7.5px);
+ }
+ 
+ 
+ /*you can use alsofor the picture list so when the screen change it stays in one position*/
+ 
+ 
+ 
+
+
+.block .block1 :hover{
     transform: scale(1.02);
+}
+.block .block1 {
+    text-decoration: underline;
+    animation: rainbow  5s infinite;
+}
+.block :hover {
+  transform: scale(1.02);
+ 
 }
 .block {
     transition: all 0.4s ease-in-out;
@@ -79,52 +145,65 @@
 }
 
 
-.home {
-    font-size: xx-large;
-    top: 0px;
-    right: 0px;
-}
-.quote{
-    border-width: 1rem;
-    border-left: var(--boder-width) solid purple;
-    box-shadow: inset 0 calc(var(--boder-width) * -1) lightblue;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-decoration: underline;
-    transition: all 0.4s ease-in-out;
-    border-style: dashed;
-}
-h1 {
-    text-align: center;
-    background-size: 204px;
-    background-color: crimson;
+
+.block{
    
-}
-html {
-  background-color: rgb(43, 124, 156);
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;/*/
-    /*background-size: cover;*/
+    background-color: rgb(247, 50, 0);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-spacing: 100px;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 20px 20px 20px 20px #37e0e6;
+
 }
 
+h1{
+    text-align: center;
+}
+h2{
+  text-align: center;
+}
+h3{
+    text-align: center;
+}
+.languages{
+    text-align: center;
+}
+.languages ol{
+    list-style: none;
+}
+
+.hobbies {
+    text-align: center;
+}
+.hobbies  :hover{
+  animation: rainbow duration ease-in-out 5s 2s direction fill-mode;
+}
+#skills ol {
+    text-align: center;
+    list-style: none;
+}
+.contact ol{
+    text-align: center;
+    list-style: none;
+}
+footer{
+    animation: rainbow 5s infinite;
+}
 .list{
    
     display: flex;
-    background: rgb(255, 255, 255, 0.85);
-    text-decoration: none;
    shape-image-threshold: initial;
    transition: all;
    transition-duration: 10s;
    animation: both;
-   animation-duration: initial;
-   padding-top: 5%;
-   padding-left: 5%;
-   padding-bottom: 5%;
-   padding-right: 5%;
-
+   
 }
+
+
 p {
     text-align: center;
 }
@@ -139,7 +218,7 @@ ol .two{
     
     transition: all 0.4s ease-in-out;
 }
-ol .tree{
+/*ol .tree{
     
     transition: all 0.4s ease-in-out;
 }
@@ -151,7 +230,7 @@ ol .five{
   
     transition: all 0.4s ease-in-out;
 }
-
+*/
 ol .one :hover {
     transform: scale(1.32);
     animation: rotate 6s infinite;
@@ -160,7 +239,7 @@ ol .two :hover{
     transform: scale(1.32);
     animation: rotate 6s infinite;
 }
-ol .tree :hover{
+/*ol .tree :hover{
     transform: scale(1.32);
     animation: rotate 6s infinite;
 }
@@ -171,16 +250,16 @@ ol .four :hover{
 ol .five :hover{
     transform: scale(1.32);
     animation: rotate 6s infinite;
-}
+}*/
 @keyframes rainbow {
     14% {
       color: red;
     }
     28% {
-      color: orange;
+      color: darkviolet;
     }
     42% {
-      color: yellow;
+      color: olivedrab;
     }
     56% {
       color: green;
