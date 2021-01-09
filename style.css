@@ -42,11 +42,12 @@
  .topnav {
   background-color: rgb(243, 11, 11);
   overflow: hidden;
+  
 }
 .topnav a {
   float: left;
   display: block;
-  
+  align-content: center;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
