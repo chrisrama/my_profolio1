@@ -120,7 +120,7 @@
 
 .block{
    
-    background-color: rgb(247, 50, 0);
+    background-color: rgb(0, 247, 235);
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
@@ -363,4 +363,35 @@ ol .five :hover{
 .demo a{
   font-family: 'Raleway', sans-serif;
 color: #000;		
+}
+
+.block1 {
+  background :rgba(147, 192, 23, 0.767)
+}
+table{
+  position: static;
+  height : 50%;
+  margin: 40px;
+}
+
+thead th {
+  background: rgb(24, 226, 24);
+  color :rgb(243, 11, 11);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding : 10px;
+ 
+}
+tr {
+
+ background :#ec0e0e;
+ border-bottom: 2px solid #fff;
+ margin-bottom:  5px;
+}
+td  {
+  text-align: left;
+  width :33.3333%;
+  padding:  15px;
 }
